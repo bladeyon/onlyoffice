@@ -1,0 +1,24 @@
+@url=http://192.168.0.192:9000/api/v1/onlyoffice/callback
+
+POST {{url}}/authentication HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "userName": "some text",
+  "password": "some text",
+  "provider": "some text",
+  "accessToken": "some text",
+  "codeOAuth": "some text"
+}
+
+
+###
+POST {{url}}/authentication.json HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "userName": "yourusername",
+    "password": "yourpassword"
+}

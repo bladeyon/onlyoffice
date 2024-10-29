@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="placeholder"></div>
+    <script
+      type="text/javascript"
+      src="http://192.168.0.192:9000/web-apps/apps/api/documents/api.js"
+    ></script>
+    <script>
+      new DocsAPI.DocEditor('placeholder', {
+        document: {
+          width: 1200,
+          height: 800,
+          fileType: 'docx',
+          key: 'Khirz6zTPdfd7',
+          title: 'Example Document Title.docx',
+          // url: 'http://192.168.8.7:9000/common/勘探评价页面.docx'
+          url: 'http://192.168.0.192:5500/%E6%9B%B9%E5%AE%B6%E6%BB%A9%E4%BC%9A%E8%AE%AE%E7%BA%AA%E8%A6%8120220608.docx'
+        },
+        documentType: 'word'
+      });
+    </script>
+  </body>
+</html>
